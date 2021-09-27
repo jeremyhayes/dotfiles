@@ -2,8 +2,8 @@
   name = Jeremy Hayes
   email = jeremyhayes@users.noreply.github.com
 
-[core]
-  autocrlf = true
+#[core]
+#  autocrlf = true
 
 [init]
   defaultBranch = main
