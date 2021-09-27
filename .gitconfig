@@ -1,0 +1,26 @@
+[user]
+  name = Jeremy Hayes
+  email = jeremyhayes@users.noreply.github.com
+
+[core]
+  autocrlf = true
+
+[init]
+  defaultBranch = main
+
+[diff]
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+	
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
+
+[alias]
+  st = status -s
+  up = pull --rebase
+  sa = "!f() { git stash apply stash@{$1}; }; f"
+  sl = stash list
+  ls = "log --pretty='%C(auto)%h %ad %C(green)<%ae>%C(reset) %d %s' --graph"
