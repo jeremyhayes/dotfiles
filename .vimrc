@@ -1,8 +1,6 @@
-" Force the cursor onto a new line after 80 characters
-set textwidth=80
-" However, in Git commit messages, let’s make it 72 characters
-autocmd FileType gitcommit set textwidth=72
-" Colour the 81st (or 73rd) column so that we don’t type over our limit
-set colorcolumn=+1
-" In Git commit messages, also colour the 51st column (for titles)
-autocmd FileType gitcommit set colorcolumn+=51
+syntax on           " syntax highlighting
+set textwidth=120   " max line width
+set colorcolumn=+1  " colorbar to indicate limit
+
+autocmd FileType gitcommit set textwidth=72     " in commit messages, limit to 72
+autocmd FileType gitcommit set colorcolumn+=51  " in commit messages, another colorbar at 51 char (for titles)
