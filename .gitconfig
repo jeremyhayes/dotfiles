@@ -2,8 +2,9 @@
   name = Jeremy Hayes
   email = jeremyhayes@users.noreply.github.com
 
-#[core]
+[core]
 #  autocrlf = true
+  editor = vim
 
 [init]
   defaultBranch = main
