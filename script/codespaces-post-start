@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # vscode codespace extensions
 code --install-extension castwide.solargraph
 code --install-extension manuelpuyol.erb-linter
