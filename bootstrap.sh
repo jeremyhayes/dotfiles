@@ -22,9 +22,3 @@ link_file ".zshrc"
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/.oh-my-zsh/custom/themes/powerlevel10k
 link_file ".p10k.zsh"
-
-# vscode codespace extensions
-if [[ -n $CODESPACES ]]; then
-    code --install-extension castwide.solargraph
-    code --install-extension manuelpuyol.erb-linter
-fi
