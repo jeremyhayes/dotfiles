@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 brew 'zsh'
 
 cask 'docker'
