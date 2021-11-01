@@ -19,7 +19,10 @@ link_file() {
 link_file ".gitconfig"
 link_file ".vimrc"
 
-# installing zsh (and homebrew) left as an exercise for the reader
+# homebrew not needed on codespace
+[[ -z $CODESPACES ]] && bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# TODO reload session and install zsh via homebrew
 
 # oh-my-zsh is already installed on codespace
 [[ -z $CODESPACES ]] && bash -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
