@@ -18,6 +18,7 @@ link_file() {
 
 link_file ".gitconfig"
 link_file ".vimrc"
+link_file "omp.json"
 
 # homebrew not needed on codespace
 [[ -z $CODESPACES ]] && bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
