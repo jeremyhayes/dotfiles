@@ -1,9 +1,0 @@
-#!/bin/bash
-
-exec > >(tee -i $HOME/codespaces_install.log)
-exec 2>&1
-set -x
-
-# vscode codespace extensions
-code --install-extension castwide.solargraph
-code --install-extension manuelpuyol.erb-linter
